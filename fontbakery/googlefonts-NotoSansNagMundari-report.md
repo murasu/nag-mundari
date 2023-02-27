@@ -10,7 +10,7 @@ Fontbakery version: 0.8.11b0
 
 
 * 🔥 **FAIL** Family 'Noto Sans Nag Mundari' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
-</div></details><br></div></details><details><summary><b>[18] NotoSansNagMundari-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[16] NotoSansNagMundari-Bold.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -52,16 +52,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: missing-codep
 
 
 * 🔥 **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" [code: wrong]
-</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2022 Google Inc. All Rights Reserved." [code: bad-notice-format]
-</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/NotoSansNagMundari/googlefonts/ttf/NotoSansNagMundari-Bold.ttf', 'fonts/NotoSansNagMundari/googlefonts/ttf/NotoSansNagMundari-Regular.ttf', 'fonts/NotoSansNagMundari/googlefonts/variable-ttf/NotoSansNagMundari[wght].ttf']. [code: missing-os2-fsselection-bit7]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font can render its own name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/render_own_name">com.google.fonts/check/render_own_name</a>)</summary><div>
 
 
@@ -142,81 +132,80 @@ Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- ninenagmundari.alt
+	- ninenagmundari.alt 
+
+	- zeronagmundari.001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The most common width is 642 among a set of 1 math glyphs.
+* ⚠ **WARN** The most common width is 623 among a set of 2 math glyphs.
 The following math glyphs have a different width, though:
 
-Width = 613:
-less
+Width = 642:
+plus
 
 Width = 662:
 equal
-
-Width = 603:
-greater
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 ikirnagmundari (U+1E4EE), muhornagmundari (U+1E4EC), sutuhnagmundari (U+1E4EF) and toyornagmundari (U+1E4ED) [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* ampersand (U+0026): X=390.5,Y=-2.0 (should be at baseline 0?)
+	* ampersand (U+0026): X=420.5,Y=-2.0 (should be at baseline 0?)
 
 	* seven (U+0037): X=129.0,Y=-1.0 (should be at baseline 0?)
 
 	* seven (U+0037): X=274.0,Y=-1.0 (should be at baseline 0?)
 
-	* oynagmundari (U+1E4D3): X=151.0,Y=715.5 (should be at cap-height 714?)
+	* oynagmundari (U+1E4D3): X=153.5,Y=714.5 (should be at cap-height 714?)
 
-	* oynagmundari (U+1E4D3): X=311.5,Y=716.0 (should be at cap-height 714?)
+	* oynagmundari (U+1E4D3): X=317.0,Y=716.0 (should be at cap-height 714?)
 
-	* anagmundari (U+1E4D5): X=149.5,Y=2.0 (should be at baseline 0?)
+	* ahnagmundari (U+1E4D9): X=395.0,Y=713.5 (should be at cap-height 714?)
 
-	* ahnagmundari (U+1E4D9): X=398.0,Y=713.5 (should be at cap-height 714?)
+	* inagmundari (U+1E4DA): X=605.5,Y=1.5 (should be at baseline 0?)
 
-	* inagmundari (U+1E4DA): X=565.5,Y=1.5 (should be at baseline 0?)
+	* inagmundari (U+1E4DA): X=106.0,Y=715.0 (should be at cap-height 714?)
 
-	* inagmundari (U+1E4DA): X=66.0,Y=715.0 (should be at cap-height 714?)
+	* inagmundari (U+1E4DA): X=240.0,Y=715.0 (should be at cap-height 714?)
 
-	* inagmundari (U+1E4DA): X=200.0,Y=715.0 (should be at cap-height 714?)
+	* isnagmundari (U+1E4DB): X=400.5,Y=716.0 (should be at cap-height 714?)
 
-	* isnagmundari (U+1E4DB): X=328.5,Y=716.0 (should be at cap-height 714?) 
+	* ucnagmundari (U+1E4E0): X=120.0,Y=712.5 (should be at cap-height 714?) 
 
-	* ucnagmundari (U+1E4E0): X=161.5,Y=714.5 (should be at cap-height 714?) [code: found-misalignments]
+	* muhornagmundari (U+1E4EC): X=1.0,Y=1071.0 (should be at ascender 1069?) [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have segments which seem very short:
 
-	* at (U+0040) contains a short segment B<<734.0,262.0>-<733.0,256.0>-<731.5,250.5>>
+	* at (U+0040) contains a short segment B<<643.0,262.0>-<642.0,256.0>-<640.5,250.5>>
 
-	* at (U+0040) contains a short segment B<<731.5,250.5>-<730.0,245.0>-<730.0,240.0>>
+	* at (U+0040) contains a short segment B<<640.5,250.5>-<639.0,245.0>-<639.0,240.0>>
 
-	* at (U+0040) contains a short segment B<<730.0,240.0>-<730.0,228.0>-<738.0,228.0>>
+	* at (U+0040) contains a short segment B<<639.0,240.0>-<639.0,228.0>-<647.0,228.0>>
 
-	* braceleft (U+007B) contains a short segment L<<200.0,469.0>--<215.0,469.0>>
+	* braceleft (U+007B) contains a short segment L<<60.0,469.0>--<75.0,469.0>>
 
-	* braceright (U+007D) contains a short segment L<<392.0,390.0>--<377.0,390.0>>
+	* braceright (U+007D) contains a short segment L<<382.0,390.0>--<367.0,390.0>>
 
-	* oynagmundari (U+1E4D3) contains a short segment B<<245.0,620.0>-<236.0,620.0>-<223.0,616.0>>
+	* oynagmundari (U+1E4D3) contains a short segment B<<255.0,620.0>-<243.0,620.0>-<229.0,616.0>> 
 
-	* oynagmundari (U+1E4D3) contains a short segment B<<223.0,616.0>-<210.0,612.0>-<200.0,600.5>> 
+	* emnagmundari (U+1E4E7) contains a short segment L<<333.0,539.0>--<333.0,539.0>> [code: found-short-segments]
+</div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
-	* emnagmundari (U+1E4E7) contains a short segment L<<303.0,539.0>--<303.0,539.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[19] NotoSansNagMundari-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+
+* ⚠ **WARN** The following glyphs have semi-vertical/semi-horizontal lines:
+
+	* zeronagmundari (U+1E4F0): L<<74.0,0.0>--<70.0,714.0>> [code: found-semi-vertical]
+</div></details><br></div></details><details><summary><b>[16] NotoSansNagMundari-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
 
 
 * 🔥 **FAIL** Missing required codepoints:
@@ -258,16 +247,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: missing-codep
 
 
 * 🔥 **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" [code: wrong]
-</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2022 Google Inc. All Rights Reserved." [code: bad-notice-format]
-</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/NotoSansNagMundari/googlefonts/ttf/NotoSansNagMundari-Bold.ttf', 'fonts/NotoSansNagMundari/googlefonts/ttf/NotoSansNagMundari-Regular.ttf', 'fonts/NotoSansNagMundari/googlefonts/variable-ttf/NotoSansNagMundari[wght].ttf']. [code: missing-os2-fsselection-bit7]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font can render its own name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/render_own_name">com.google.fonts/check/render_own_name</a>)</summary><div>
 
 
@@ -355,12 +334,14 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- ninenagmundari.alt
+	- ninenagmundari.alt 
+
+	- zeronagmundari.001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The most common width is 576 among a set of 2 math glyphs.
+* ⚠ **WARN** The most common width is 596 among a set of 2 math glyphs.
 The following math glyphs have a different width, though:
 
 Width = 610:
@@ -374,18 +355,14 @@ equal
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 ikirnagmundari (U+1E4EE), muhornagmundari (U+1E4EC), sutuhnagmundari (U+1E4EF) and toyornagmundari (U+1E4ED) [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* comma (U+002C): X=88.0,Y=-1.0 (should be at baseline 0?)
+	* comma (U+002C): X=78.0,Y=-1.0 (should be at baseline 0?)
 
-	* comma (U+002C): X=56.0,Y=-1.0 (should be at baseline 0?)
+	* comma (U+002C): X=46.0,Y=-1.0 (should be at baseline 0?)
 
 	* semicolon (U+003B): X=88.0,Y=-1.0 (should be at baseline 0?)
 
@@ -393,17 +370,17 @@ equal
 
 	* uni20B9.rupee (U+20B9): X=505.0,Y=-1.0 (should be at baseline 0?)
 
-	* onagmundari (U+1E4D0): X=269.5,Y=716.0 (should be at cap-height 714?)
+	* onagmundari (U+1E4D0): X=202.0,Y=-1.5 (should be at baseline 0?)
 
-	* olnagmundari (U+1E4D2): X=245.0,Y=712.0 (should be at cap-height 714?)
+	* olnagmundari (U+1E4D2): X=263.0,Y=712.0 (should be at cap-height 714?)
 
-	* olnagmundari (U+1E4D2): X=471.0,Y=712.0 (should be at cap-height 714?)
+	* olnagmundari (U+1E4D2): X=489.0,Y=712.0 (should be at cap-height 714?)
 
-	* oynagmundari (U+1E4D3): X=151.0,Y=713.5 (should be at cap-height 714?)
+	* oynagmundari (U+1E4D3): X=146.0,Y=713.5 (should be at cap-height 714?)
 
-	* oynagmundari (U+1E4D3): X=299.0,Y=715.0 (should be at cap-height 714?) 
+	* oynagmundari (U+1E4D3): X=294.0,Y=715.0 (should be at cap-height 714?) 
 
-	* 14 more.
+	* 16 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
@@ -411,20 +388,20 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 * ⚠ **WARN** The following glyphs have segments which seem very short:
 
-	* at (U+0040) contains a short segment B<<733.0,259.0>-<727.0,240.0>-<727.0,229.0>>
+	* at (U+0040) contains a short segment B<<582.0,259.0>-<576.0,240.0>-<576.0,229.0>>
 
-	* at (U+0040) contains a short segment B<<727.0,229.0>-<727.0,212.0>-<742.0,212.0>>
+	* at (U+0040) contains a short segment B<<576.0,229.0>-<576.0,212.0>-<591.0,212.0>>
 
-	* braceleft (U+007B) contains a short segment L<<200.0,459.0>--<215.0,459.0>>
+	* braceleft (U+007B) contains a short segment L<<80.0,459.0>--<95.0,459.0>>
 
 	* braceright (U+007D) contains a short segment L<<338.0,400.0>--<323.0,400.0>>
 
-	* abnagmundari (U+1E4D7) contains a short segment B<<160.0,176.0>-<160.0,182.0>-<160.0,188.0>>
+	* abnagmundari (U+1E4D7) contains a short segment B<<159.0,176.0>-<159.0,182.0>-<159.0,188.0>>
 
-	* udnagmundari (U+1E4E1) contains a short segment B<<371.0,354.0>-<366.0,352.0>-<361.0,350.0>> 
+	* udnagmundari (U+1E4E1) contains a short segment B<<354.0,354.0>-<350.0,352.0>-<344.0,350.0>> 
 
-	* egnagmundari (U+1E4E6) contains a short segment B<<656.0,319.0>-<656.0,328.0>-<656.0,336.0>> [code: found-short-segments]
-</div></details><br></div></details><details><summary><b>[23] NotoSansNagMundari[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+	* egnagmundari (U+1E4E6) contains a short segment B<<670.0,319.0>-<670.0,328.0>-<670.0,336.0>> [code: found-short-segments]
+</div></details><br></div></details><details><summary><b>[20] NotoSansNagMundari[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -478,16 +455,6 @@ Use -F or --full-lists to disable shortening of long lists. [code: missing-codep
 
 
 * 🔥 **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" [code: wrong]
-</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
-
-
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2022 Google Inc. All Rights Reserved." [code: bad-notice-format]
-</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
-
-
-* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/NotoSansNagMundari/googlefonts/ttf/NotoSansNagMundari-Bold.ttf', 'fonts/NotoSansNagMundari/googlefonts/ttf/NotoSansNagMundari-Regular.ttf', 'fonts/NotoSansNagMundari/googlefonts/variable-ttf/NotoSansNagMundari[wght].ttf']. [code: missing-os2-fsselection-bit7]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check font can render its own name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/render_own_name">com.google.fonts/check/render_own_name</a>)</summary><div>
 
 
@@ -579,16 +546,18 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- ninenagmundari.alt
+	- ninenagmundari.alt 
+
+	- zeronagmundari.001
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour order differs in glyph 'opnagmundari.ss01': [0, 1, 2] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f07760d1010>, [0, 2, 1] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f07760d1650>. [code: interpolation-issues]
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 0 start point differs in glyph 'unagmundari' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f48601a3610> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f48601a0150> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
-* ⚠ **WARN** The most common width is 576 among a set of 2 math glyphs.
+* ⚠ **WARN** The most common width is 596 among a set of 2 math glyphs.
 The following math glyphs have a different width, though:
 
 Width = 610:
@@ -602,18 +571,14 @@ equal
 
 * ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
 	 ikirnagmundari (U+1E4EE), muhornagmundari (U+1E4EC), sutuhnagmundari (U+1E4EF) and toyornagmundari (U+1E4ED) [code: mark-chars]
-</div></details><details><summary>⚠ <b>WARN:</b> Does GPOS table have kerning information? This check skips monospaced fonts as defined by post.isFixedPitch value (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gpos.html#com.google.fonts/check/gpos_kerning_info">com.google.fonts/check/gpos_kerning_info</a>)</summary><div>
-
-
-* ⚠ **WARN** GPOS table lacks kerning information. [code: lacks-kern-info]
 </div></details><details><summary>⚠ <b>WARN:</b> Are there any misaligned on-curve points? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_alignment_miss">com.google.fonts/check/outline_alignment_miss</a>)</summary><div>
 
 
 * ⚠ **WARN** The following glyphs have on-curve points which have potentially incorrect y coordinates:
 
-	* comma (U+002C): X=88.0,Y=-1.0 (should be at baseline 0?)
+	* comma (U+002C): X=78.0,Y=-1.0 (should be at baseline 0?)
 
-	* comma (U+002C): X=56.0,Y=-1.0 (should be at baseline 0?)
+	* comma (U+002C): X=46.0,Y=-1.0 (should be at baseline 0?)
 
 	* semicolon (U+003B): X=88.0,Y=-1.0 (should be at baseline 0?)
 
@@ -621,17 +586,17 @@ equal
 
 	* uni20B9.rupee (U+20B9): X=505.0,Y=-1.0 (should be at baseline 0?)
 
-	* onagmundari (U+1E4D0): X=269.5,Y=716.0 (should be at cap-height 714?)
+	* onagmundari (U+1E4D0): X=202.0,Y=-1.5 (should be at baseline 0?)
 
-	* olnagmundari (U+1E4D2): X=245.0,Y=712.0 (should be at cap-height 714?)
+	* olnagmundari (U+1E4D2): X=263.0,Y=712.0 (should be at cap-height 714?)
 
-	* olnagmundari (U+1E4D2): X=471.0,Y=712.0 (should be at cap-height 714?)
+	* olnagmundari (U+1E4D2): X=489.0,Y=712.0 (should be at cap-height 714?)
 
-	* oynagmundari (U+1E4D3): X=231.0,Y=1.0 (should be at baseline 0?)
+	* oynagmundari (U+1E4D3): X=230.5,Y=-0.5 (should be at baseline 0?)
 
-	* oynagmundari (U+1E4D3): X=151.0,Y=713.5 (should be at cap-height 714?) 
+	* oynagmundari (U+1E4D3): X=146.0,Y=713.5 (should be at cap-height 714?) 
 
-	* 14 more.
+	* 16 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-misalignments]
 </div></details><br></div></details>
@@ -640,8 +605,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-misalig
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 3 | 32 | 27 | 344 | 22 | 260 | 0 |
-| 0% | 5% | 4% | 50% | 3% | 38% | 0% |
+| 3 | 26 | 25 | 342 | 20 | 272 | 0 |
+| 0% | 4% | 4% | 50% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
